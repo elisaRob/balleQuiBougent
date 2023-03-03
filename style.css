@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#555
+}
+
+ul{
+    list-style-type:none;
+    display:flex;
+    border-bottom:3px solid white;
+   
+}
+
+ul li{
+    width:50px;
+    height:50px;
+    background-color:white;
+    margin:15px;
+    border-radius:50%;
+    animation-name:sautBall;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+
+@keyframes sautBall{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-200px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+
+ul li:nth-child(1){
+    animation-delay:0s;
+  
+}
+
+ul li:nth-child(2){
+    animation-delay:0.2s;
+   
+}
+
+ul li:nth-child(3){
+    animation-delay:0.4s;
+    
+}
+
+ul li:nth-child(4){
+    animation-delay:0.6s;
+}
+
+ul li:nth-child(5){
+    animation-delay:0.8s;
+}
